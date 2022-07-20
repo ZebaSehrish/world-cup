@@ -118,14 +118,17 @@ body {
     margin: 30px 30px 30px 30px;
 }
 
-.sidebar a {
+.sidebar .sidebar-button a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
 #button-3 {
     background-color: #DD0000;
-    color: #FFFFFF;
+}
+
+#schedule a {
+    color: #161616;
 }
 
 .blog-items {

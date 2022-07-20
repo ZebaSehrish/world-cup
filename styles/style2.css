@@ -115,7 +115,7 @@ body {
     margin: 30px 30px 30px 30px;
 }
 
-.sidebar a {
+.sidebar .sidebar-button a {
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -123,6 +123,10 @@ body {
 #button-1 {
     background-color: #DD0000;
 
+}
+
+#blog a {
+    color: #161616;
 }
 
 .flag-items {
