@@ -146,6 +146,23 @@ body {
 .flags {
     display: flex;
     margin-top: 53px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flag-text {
+    text-align: center;
+}
+
+.flag-text h2 {
+    font-weight: 600;
+    line-height: 30px;
+    size: 20px;
+}
+
+.flag-text p {
+    color: #4D4D4D;
+    font-size: 16px;
 }
 
 .footer-box {

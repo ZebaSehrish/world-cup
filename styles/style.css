@@ -63,8 +63,12 @@ body {
     background-color: #DD0000;
     padding: 16px 25px;
     border-radius: 5px;
+}
 
-
+.header-button:hover {
+    background-color: orange;
+    border-radius: 20px;
+    transition: 1s;
 }
 
 .header-image {
@@ -151,8 +155,27 @@ body {
     flex-direction: column;
 }
 
+.blogs button {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+.blogs p {
+    width: 272px;
+    height: 54px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
 .icons-alignment {
     display: flex;
+    width: 143px;
+    height: 26px;
+    margin-left: 20px;
 }
 
 .icons-alignment img {
@@ -161,19 +184,47 @@ body {
 }
 
 .icons-alignment p {
+    color: #161616B2;
+    font-weight: 100;
     margin: 0px 10px 0px 0px;
 
 }
 
-.footer-box {
-    color: white;
-    margin-top: 30px;
-    background-color: #161616;
+.main-info .view {
+    display: none;
+}
+
+.view-button {
+    width: 100px;
+    height: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    /* font-size: 20px; */
     text-align: center;
+    background-color: #DD0000;
+    padding: 12px 29px;
+    border-radius: 5px;
+}
+
+.footer-box {
+    height: 444px;
+    color: white;
+    margin-top: 130px;
+    background-color: #161616;
 }
 
 .footer-box h2 {
-    padding-top: 75px;
+    padding-top: 130px;
+    padding-left: 650px;
+    width: 95px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+hr {
+    width: 75%;
+    color: lightgray;
 }
 
 .info {
@@ -185,17 +236,53 @@ body {
 .info a {
     text-decoration: none;
     color: lightgray;
+}
+
+.socials {
+    padding-left: 600px;
+}
+
+.fa-brands {
+    color: beige;
+    width: 40px;
+    font-size: 25px;
+    padding-top: 25px;
 
 }
+
+
 
 /* For Tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 834px) {
 
-    .header-info {
+    .full-page {
         width: 100%;
-        height: 100%;
-        padding-bottom: 10%;
-        justify-content: space-around;
+        /* padding-bottom: 10%;
+        justify-content: space-around;  */
+    }
+
+    .blog-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .full-page .view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-box h2 {
+        text-align: center;
+    }
+
+    .info {
+        margin-top: 30px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, 2fr);
+        /* grid-template-rows: repeat(2, 1fr); */
     }
 
     .sidebar {
@@ -204,78 +291,25 @@ body {
 
     }
 
-    .nav-btn-style {
+    .sidebar .sidebar-button a {
 
         border: 3px solid lightgrey;
 
     }
-
-    .main-body {
-        margin-top: 10%;
-    }
-
-    .navigation {
-        background-color: #FFFFFF;
-    }
-
-    .header-image {
-        margin-top: 15%;
-        margin-right: 40%;
-        margin-left: -15%;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-
-
-    }
-
-    .hide-grid {
-        display: none;
-    }
-
-    .footer-box {
-        margin-left: 30%;
-        margin-top: 30%;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .info {
-        margin-top: 20%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-
-    }
-
-    .middle {
-        display: flex;
-        margin-left: 150%;
-
-    }
-
 }
 
-/*
--------------
- Media Queries For responsiveness
-----------------
- */
+
 
 /* for mobile */
 @media only screen and (max-width:688px) {
-    .header-style {
+    .header-info {
         width: 100%;
         height: 100%;
         flex-direction: column;
     }
 
-    .left-header-info,
-    .right-header-info {
+    .header-blog,
+    .header-image {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -295,15 +329,12 @@ body {
 
     }
 
-    .right-content {
-        margin-left: 70px;
+    .blog-items {
+        /* margin-left: 70px;
         width: 100%;
-        height: 100%;
+        height: 100%; */
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
 
     }
 
