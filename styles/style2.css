@@ -172,16 +172,24 @@ body {
 }
 
 .footer-box {
+    height: 444px;
     color: white;
-    margin-top: 30px;
-    /* width: 1660px;  */
-    /* height: 200px; */
+    margin-top: 130px;
     background-color: #161616;
-    text-align: center;
 }
 
 .footer-box h2 {
-    padding-top: 75px;
+    padding-top: 130px;
+    padding-left: 650px;
+    width: 95px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+hr {
+    width: 75%;
+    color: lightgray;
 }
 
 .info {
@@ -193,5 +201,16 @@ body {
 .info a {
     text-decoration: none;
     color: lightgray;
+}
+
+.socials {
+    padding-left: 600px;
+}
+
+.fa-brands {
+    color: beige;
+    width: 40px;
+    font-size: 25px;
+    padding-top: 25px;
 
 }
